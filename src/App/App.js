@@ -9,6 +9,7 @@ import StateContext from '../StateContext';
 import './App.css';
 import AddFolder from '../AddFolder/AddFolder';
 import AddNote from '../AddNote/AddNote';
+import ErrorBoundary from '../ErrorBoundary';
 
 class App extends Component {
     state = {
@@ -125,6 +126,7 @@ class App extends Component {
             addNote: this.addNote
         };
         return (
+            <ErrorBoundary>
             <StateContext.Provider value={value}>
                 <div className="App">
                     <nav className="App__nav">{this.renderNavRoutes()}</nav>
@@ -137,6 +139,7 @@ class App extends Component {
                     <main className="App__main">{this.renderMainRoutes()}</main>
                 </div>
             </StateContext.Provider>
+            </ErrorBoundary>
         );
     }
 }

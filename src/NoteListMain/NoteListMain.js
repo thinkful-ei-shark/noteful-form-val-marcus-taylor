@@ -11,11 +11,10 @@ import './NoteListMain.css'
 export default class NoteListMain extends React.Component {
   static contextType = StateContext;
   render() {
-
+  
   const {notes} = this.context
   const {folderId} = this.props.match.params;
   const notesForFolder = getNotesForFolder(notes, folderId);
-
   return (
     <section className='NoteListMain'>
       <ul>
