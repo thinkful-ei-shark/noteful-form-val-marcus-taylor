@@ -73,8 +73,8 @@ class App extends Component {
         .catch(err => this.setState({
             error: err.message
         }))
+    
     }
-
     renderNavRoutes() {
         return (
             <>
@@ -114,8 +114,8 @@ class App extends Component {
                 <Route path="/add-folder" component={AddFolder} />
                 <Route path="/add-note" component={AddNote} />
             </>
-        );
-    }
+            );
+        }
 
     render() {
         const value = {
