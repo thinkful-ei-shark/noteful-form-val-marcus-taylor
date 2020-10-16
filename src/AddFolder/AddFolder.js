@@ -47,7 +47,7 @@ class AddFolder extends Component {
       fetch(url, options)
       .then(res => {
         if(!res.ok){
-          throw new Error('Something went wrong, please try again later');
+          throw new Error('Something went wrong posting "folders", please try again later');
         }
         return res.json();
       })
@@ -58,6 +58,7 @@ class AddFolder extends Component {
       })
       .catch(err => console.log(err.message)) 
     }
+    window.location.reload();
   }
 
   render(){

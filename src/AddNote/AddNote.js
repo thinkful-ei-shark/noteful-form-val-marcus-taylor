@@ -28,7 +28,7 @@ class AddNote extends Component {
     })
   }
 
-  handleSubmit(event){
+  handleSubmit = (event) => {
     event.preventDefault();
     //process input value here
     const noteName = event.target.noteName.value;
