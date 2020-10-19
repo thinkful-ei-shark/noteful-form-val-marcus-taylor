@@ -27,7 +27,7 @@ class App extends Component {
 
     addFolder = (newFolder) => {
         this.setState({
-            folder: [...this.state.folders,
+            folders: [...this.state.folders,
             newFolder
         ]
         })

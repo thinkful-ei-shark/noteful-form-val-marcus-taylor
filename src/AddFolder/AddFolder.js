@@ -58,7 +58,6 @@ class AddFolder extends Component {
       })
       .catch(err => console.log(err.message)) 
     }
-    window.location.reload();
   }
 
   render(){
