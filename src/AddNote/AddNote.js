@@ -94,7 +94,7 @@ class AddNote extends Component {
           {this.state.error && (<ValidationError message={this.state.error} clearError={this.clearError}/>)}
           <div className='textarea-content'>
             <label htmlFor='note-content'>Note content: </label>
-            <textarea type='text' className='note-content' id='note-content' name='noteContent' rows='5' columns='5' required/>
+            <textarea type='text' className='note-content' id='note-content' name='noteContent' rows='5' columns='5'/>
           </div>
           <label htmlFor='note-folder'>Folder: </label>
           <select id='note-folder' className='note-folder' name='noteFolder'>
